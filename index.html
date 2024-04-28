@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Home Page</title>
+</head>
+<body>
+    
+    <header>
+        <a class="logo">د. عبد الرحمن خليل</a>
+        <nav class="navigation">
+            <a href="#services">كتب</a>
+            <a href="#projects">قناتي على يوتيوب</a>
+            <a href="#articles">مقالاتي</a>
+        </nav>
+    </header>
+
+    <section class="main">
+        <div>
+            <h2>السلام عليكم, انا الاستاذ عبد الرحمن خليل<br><span> الحاصل على لقب دكتوراة في تعليم الرياضيات(التربية الرياضية) والحاصل على لقب محاضر كبير</span></h2>
+            <h3>ألفت العديد من الكتب في التفكير الرياضي </h3>
+            <a class="main-btn download-btn" onclick="downloadCVPDF('קורות חיים עבד אלרחמן חליל 2022 מעודכן 5.pdf')">تحميل سيرتي الذاتية</a>
+            <div class="social-icons">
+                <a href="https://www.youtube.com/@user-rh5de5qc8u/videos" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="cards" id="services">
+        <h2 class="title">كتب</h2>
+        <div class="content">
+            <div class="card" onclick="navigateToElementaryBooks()">
+                <div class="icon">
+                    <i class="fa-solid fa-book"></i>
+                </div>
+                <div class="info">
+                    <h3>كتب رياضيات ابتدائي</h3>
+                    <p>كتب لجميع مراحل الصفوف الابتدائية من الصف الاول حتى الصف السادس</p>
+                </div>
+            </div>
+            <div class="card" onclick="navigateToThinkingBooks()">
+                <div class="icon">
+                    <i class="fa-solid fa-brain"></i>
+                </div>
+                <div class="info">
+                    <h3>كتب تفكير رياضي</h3>
+                    <p>كتب تطور التفكير الرياضي بشكل مذهل وتناسب جميع الطلاب في الابتدائي والاعدادي</p>
+                </div>
+            </div>
+            <div class="card" onclick="navigateToAcademyBooks()">
+                <div class="icon">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <div class="info">
+                    <h3>كتب أكاديمية</h3>
+                    <p>كتب في الرياضيات في مجالات متعددة مثل الاحصاء وطرف البحث الكمي</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2 class="title">فيديوهات يوتيوب</h2>
+        <div class="content">
+            <div class="card">
+                <div class="icon">
+                    <img src="images/ba.png" width="300" height="150">
+                </div>
+                <div class="info">
+                    <p>شرح بعض المواضيع في الاحصاء للقب الأول مثل المتغيرات, مقاييس المركز, مقاييس التشتت, تنظيم المعطيات, بناء العينات, الثبات والصدق, التوزيع الطبيعي, مربع كاي, رابط سبيرمان وبيرسون, اختبارات t و z.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <img src="images/ma.png" width="300" height="150">
+                </div>
+                <div class="info">
+                    <p>شرح دروس إحصاء للقب الثاني فما فوق بما في ذلك تحليل التباين الأحادي, الإنحدار البسيط, الإنحدار المتعدد, الإختبارات البعدية, تحليل التباين الثنائي, تحليل التباين المتغاير, القياسات المتكررة.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <img src="images/spss.png" width="300" height="150">
+                </div>
+                <div class="info">
+                    <p>شرح كيفية إستعمال برنامج spss ويشمل إختبارات سبيرمان وبيرسون والرابط الجزئي, الإحصاء الوصفي, تحويلات على المتغيرات, الإنحدار البسيط والمتعدد, عمليات في ملف المعطيات, تحليل التباين الأحادي, مربع كاي, إختبار t, الاتساق الداخلي ألفا كرونباخ, مقارنة المعدلات وجحم الأثر, إدخال المعطيات وتعريفها.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="articles" id="articles">
+        <h2 class="title">مقالات</h2>
+        <div class="content">
+        <div class="article-card">
+        <h2>Examining the relations between social anxiety and demographic factors</h2>
+        <button class="download-btn" onclick="downloadPDF('גורמים-דמוגרפיים-רגשיים-חברתיים-וחינוכיים-חוסן-אישי-בקרב[3532].pdf')">تحميل PDF</button>
+    </div>
+
+    <div class="article-card">
+        <h2>Demographic, Social-Emotional and Educational Aspects of Specific and Generalized Social Anxiety Subtypes Among Palestinian Arab Minority Student Teachers in Israel </h2>
+        <button class="download-btn" onclick="downloadPDF('social anxiety[3535].pdf')">تحميل PDF</button>
+    </div>
+
+    <div class="article-card">
+        <h2>Social anxiety subtypes among arab student teachers: demographic, social-Emotional and educational characteristics</h2>
+        <button class="download-btn" onclick="downloadPDF('SOCIALANXIETYSUBTYPESAMONGARABSTUDENTTEACHERS[3533].pdf')">تحميل PDF</button>
+    </div>
+
+    <div class="article-card">
+        <h2>Demographic, social-emotional and educational factors: personal resilience among beginning and specialized teachers from the Arab society in Israel</h2>
+        <button class="download-btn" onclick="downloadPDF('גורמים-דמוגרפיים-רגשיים-חברתיים-וחינוכיים-חוסן-אישי-בקרב[3532].pdf')">تحميل PDF</button>
+    </div>
+
+    <div class="article-card">
+        <h2>Motivation to learn among teaching students from the Arab society: demographic-personal factors and social-emotional factors</h2>
+        <button class="download-btn" onclick="downloadPDF('מוטיבציה ללמידה בקרב סטודנטים להוראה מהחברה הערבית - גורמים דמוגרפיים  - אישיים וגורמים רגשיים - חברתיים[3530].pdf')">تحميل PDF</button>
+    </div>
+    </div>
+    </section>
+
+    <footer class="footer">
+        <p class="footer-title">تم إنشاء الموقع من قبل: <span>مريم خليل</span></p>
+        <div class="social-icons">
+        <p class="footer-name">Maryam_khalil_7@outlook.com<span><a href="#"><i class="fa-solid fa-envelope"></i></a></span></p>
+        </div>
+    </footer>
+
+
+    <script>
+        function downloadPDF(pdfFileName) {
+            var pdfPath = './articles/' + pdfFileName;
+
+            var link = document.createElement('a');
+
+            link.download = pdfFileName;
+
+            link.href = pdfPath;
+
+            document.body.appendChild(link);
+
+            link.click();
+
+            document.body.removeChild(link);
+        }
+
+        function downloadCVPDF(pdfFileName) {
+            var pdfPath = './academy-books/' + pdfFileName;
+
+            var link = document.createElement('a');
+
+            link.download = pdfFileName;
+
+            link.href = pdfPath;
+
+            document.body.appendChild(link);
+
+            link.click();
+
+            document.body.removeChild(link);
+        }
+
+        function navigateToElementaryBooks(){
+            window.location.href = 'elementary-book.html';
+        }
+
+        function navigateToThinkingBooks(){
+            window.location.href = 'thinking-book.html';
+        }
+
+        function navigateToAcademyBooks(){
+            window.location.href = 'academy-book.html';
+        }
+    </script>
+
+</body>
+</html>

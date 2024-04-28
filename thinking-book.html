@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Thinking books</title>
+</head>
+<body>
+    <header>
+        <a class="logo">د. عبد الرحمن خليل</a>
+        <a class="logo">كتب تفكيرية</a>
+        <nav class="navigations">
+        <a href="#" class="HomePage" onclick="navigateToHomePage()"><i class="fa-solid fa-house"></i></a>
+        </nav>
+    </header>
+
+    <section class="main-academy">
+        <div class="content">
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-solid fa-book"></i>
+                </div>
+                <div class="info">
+                    <h3>واحة التفكير الرياضي</h3>
+                    <p>للصف الاول</p>
+                    <button class="download-btn" onclick="downloadPDF('')">تحميل PDF</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-solid fa-book"></i>
+                </div>
+                <div class="info">
+                    <h3>دوحة التفكير الرياضي</h3>
+                    <p>للصف الثاني</p>
+                    <button class="download-btn" onclick="downloadPDF('')">تحميل PDF</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-solid fa-book"></i>
+                </div>
+                <div class="info">
+                    <h3>المدخل الى بحر التفكير الرياضي</h3>
+                    <p>للصفوف ثالث رابع خامس</p>
+                    <button class="download-btn" onclick="downloadPDF('')">تحميل PDF</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-solid fa-book"></i>
+                </div>
+                <div class="info">
+                    <h3>الأساس في التفكير الرياضي</h3>
+                    <p>للصف الخامس فما فوق</p>
+                    <button class="download-btn" onclick="downloadPDF('')">تحميل PDF</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        function downloadPDF(pdfFileName) {
+            var pdfPath = './thinking-books/' + pdfFileName;
+
+            var link = document.createElement('a');
+
+            link.download = pdfFileName;
+
+            link.href = pdfPath;
+
+            document.body.appendChild(link);
+
+            link.click();
+
+            document.body.removeChild(link);
+        }
+
+        function navigateToHomePage(){
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+</html>
